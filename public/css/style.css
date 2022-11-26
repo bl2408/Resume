@@ -1,0 +1,167 @@
+:root{
+    --highlight1: rgb(49, 127, 171);
+    --highlightBanner: rgb(44, 112, 151);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 62.5%;
+
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 1754px;
+    height: 1120px;
+    font-size: 1.2rem; 
+    position: relative;
+}
+
+main > header {
+    width: 100%;
+    height: 180px;
+    background-color:var(--highlightBanner);
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+
+main > header h1 {
+    width: 98%;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main > header .inner{
+    width: 94%;
+    display: flex;
+}
+
+main > header .inner .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 50px;
+    row-gap: 2px;
+}
+main > header .inner .grid > div {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    column-gap: 5px;
+}
+
+main > header .inner .grid > div > div:first-child{
+    font-size: 1.4rem;
+    opacity: 0.3;
+}
+
+main > header .inner .grid > div > div:nth-child(2){
+    color: rgb(226, 226, 226);
+    font-size: 1rem;
+}
+
+#main-grid{
+    display: block;
+    width: 96%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    gap: 8px;
+}
+
+article {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+article > header{
+    font-size: 1.8rem;
+    color: var(--highlight1);
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+article > header:after {
+    content:"";
+    background: -webkit-linear-gradient(
+        left, 
+        var(--highlight1) 0%, 
+        rgba(0,0,0,0) 95%
+    );
+    display: block;
+    height:1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+article .inner{
+    width: 98%;
+    margin: auto;
+}
+
+.flex-pills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.flex-pills > div {
+    opacity: 0.7;
+    display: block;
+    padding: 6px 10px;
+    background-color: var(--highlight1);
+    color: white;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+ul{
+    margin-left: 4px;
+    padding: 0;
+    list-style-position: inside;
+    list-style: none; /* Remove default bullets */
+}
+li{
+    padding-bottom: 3px;
+}
+      
+ul li::before {
+    content: "\2609"; 
+    color: var(--highlight1);
+    display: inline-block;
+    width: 1.8rem;
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: var(--highlightBanner);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

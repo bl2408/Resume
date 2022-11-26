@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Brian Lambert - Resume</title>
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <h1>Brian Lambert</h1>
+            <div class="inner">
+                <div class="grid">
+                    <div>
+                        <div><i class="fa fa-phone"></i></div><div>0430 538 384</div>
+                    </div>
+                    <div>
+                        <div><i class="fa fa-github"></i></div><div>@bl2408</div>
+                    </div>
+                    <div>
+                        <div><i class="fa fa-at"></i></div><div>brianlambert2408@gmail.com</div>
+                    </div>
+                    <div>
+                        <div><i class="fa fa-instagram"></i></div><div>@bribrilam</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main-grid">
+            <div>
+                <article>
+                    <header>Experience</header>
+                    <div class="inner">
+                        hello
+                    </div>
+                </article>
+                <article>
+                    <header>Education</header>
+                </article>
+            </div>
+            <div>
+                <article>
+                    <header>Skills</header>
+                    <div class="inner">
+                        <div id="pills-skills" class="flex-pills">
+                            <script>
+                                main = document.querySelector("#pills-skills");
+                                [
+                                    "html", "css", "javascript", "php", "ruby", "c#", "sql", 
+                                    "react", "Rails", "wordpress",
+                                    "git", "github",
+                                    "Photoshop",
+                                    "Lightroom"
+                                ].forEach(skill=>{
+                                    main.innerHTML += `<div>${skill.toUpperCase()}</div>`;
+                                });                        
+                                
+                            </script>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <header>Hobbies</header>
+                    <div class="inner">
+                        <div>
+                            <ul id="ul-hobbies">
+                                <script>
+                                    main = document.querySelector("#ul-hobbies");
+                                    [
+                                        "Cars", "Photography", "PC Builds", "Tennis", "Basketball"
+                                    ].forEach(skill=>{
+                                        main.innerHTML += `<li>${skill[0].toUpperCase()}${skill.slice(1).toLowerCase()}</li>`;
+                                    });                        
+                                    
+                                </script>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <header>References</header>
+                    <div class="inner">
+                        Available on request.
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+        <footer>
+            Source code: here
+        </footer>
+    </main>
+    
+    
+</body>
+</html>
