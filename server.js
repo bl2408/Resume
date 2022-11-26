@@ -5,7 +5,7 @@ var server = express()
 
 var PORT = 3000
 
-server.use(express.static('public'))
+server.use(express.static('./'))
 
 server.listen(PORT, function () {
   console.log('Listening on port', PORT)
