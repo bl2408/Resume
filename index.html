@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="./js/index.js"></script>
     <title>Brian Lambert - Resume</title>
 </head>
 <body>
@@ -42,51 +43,8 @@
                 <article>
                     <header>Experience</header>
                     <div class="inner">
-                        <div class="grid-timeline">
-                            <div class="gt-item">
-                                <div></div>
-                                <div>
-                                    <div>Title</div>
-                                    <div>2022</div>
-                                </div>
-                                <div></div>
-                                <div>
-                                    Lorem ipsum, dolor sit amet 
-                                    consectetur adipisicing elit. 
-                                    Tenetur quaerat soluta iste ex 
-                                    nostrum id autem voluptate aliquam 
-                                    et voluptatum quis odio obcaecati 
-                                    reiciendis est, aspernatur eius odit ipsa praesentium!
-                                    Lorem ipsum, dolor sit amet 
-                                    consectetur adipisicing elit. 
-                                    Tenetur quaerat soluta iste ex 
-                                    nostrum id autem voluptate aliquam 
-                                    et voluptatum quis odio obcaecati 
-                                    reiciendis est, aspernatur eius odit ipsa praesentium!
-                                </div>
-                            </div>
-                            <div class="gt-item">
-                                <div></div>
-                                <div>
-                                    <div>Title</div>
-                                    <div>Date</div>
-                                </div>
-                                <div></div>
-                                <div>
-                                    Lorem ipsum, dolor sit amet 
-                                    consectetur adipisicing elit. 
-                                    Tenetur quaerat soluta iste ex 
-                                    nostrum id autem voluptate aliquam 
-                                    et voluptatum quis odio obcaecati 
-                                    reiciendis est, aspernatur eius odit ipsa praesentium!
-                                    Lorem ipsum, dolor sit amet 
-                                    consectetur adipisicing elit. 
-                                    Tenetur quaerat soluta iste ex 
-                                    nostrum id autem voluptate aliquam 
-                                    et voluptatum quis odio obcaecati 
-                                    reiciendis est, aspernatur eius odit ipsa praesentium!
-                                </div>
-                            </div>
+                        <div id="sec-experience" class="grid-timeline">
+                            
                         </div>
                     </div>
                 </article>
@@ -99,19 +57,6 @@
                     <header>Skills</header>
                     <div class="inner">
                         <div id="pills-skills" class="flex-pills">
-                            <script>
-                                main = document.querySelector("#pills-skills");
-                                [
-                                    "html", "css", "javascript", "php", "ruby", "c#", "sql", 
-                                    "react", "Rails", "wordpress",
-                                    "git", "github",
-                                    "Photoshop",
-                                    "Lightroom"
-                                ].forEach(skill=>{
-                                    main.innerHTML += `<div>${skill.toUpperCase()}</div>`;
-                                });                        
-                                
-                            </script>
                         </div>
                     </div>
                 </article>
@@ -121,15 +66,6 @@
                     <div class="inner">
                         <div>
                             <ul id="ul-hobbies">
-                                <script>
-                                    main = document.querySelector("#ul-hobbies");
-                                    [
-                                        "Cars", "Photography", "PC Builds", "Tennis", "Basketball"
-                                    ].forEach(skill=>{
-                                        main.innerHTML += `<li>${skill[0].toUpperCase()}${skill.slice(1).toLowerCase()}</li>`;
-                                    });                        
-                                    
-                                </script>
                             </ul>
                         </div>
                     </div>

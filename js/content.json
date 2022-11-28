@@ -1,0 +1,24 @@
+{
+    "lists":{
+        "skills": [
+            "html", "css", "javascript", "php", "ruby", "c#", "sql", 
+            "react", "Rails", "wordpress", "git", "github","Photoshop","Lightroom"
+        ],
+        "hobbies":[
+            "Cars", "Photography", "PC Builds", "Tennis", "Basketball"
+        ]
+    },
+    "experience": [
+        {
+            "title": "Title",
+            "date": "date",
+            "body": "This is content 1"
+        },
+        {
+            "title": "Title",
+            "date": "date",
+            "body": "This is content 2"
+        }
+    ],
+    "education": []
+}
